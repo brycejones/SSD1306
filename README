@@ -1,3 +1,3 @@
 Arduino sketch printing full ascii set.
 
-This has been tested on an Arduino Uno R3 using Adafruit's 128x64 OLED dispaly.
+This sketch has been tested on an Arduino Uno R3 using Adafruit's 128x64 OLED dispaly. Purpose of the sketch is to simply display complete character set on OLED display.
