@@ -1,12 +1,13 @@
 /*********************************************************************
-This sketch displays the full characterset of Adafrui'ts Monochrome OLEDs
+This sketch displays the full characterset of Adafruit's Monochrome OLEDs
 based on SSD1306 drivers. I used the 128x64 OLED and purchased everything
-from Limor's excellent Adafruit shop!
+from Limor's excellent Adafruit shop! The OLED has a very high quality
+display.
 
   ------> http://www.adafruit.com/category/63_98
 
 Required hardware:
-  -Arduino Tested with both Uno Rev3 and Micro
+  -Arduino (Tested both Uno Rev3 and Micro)
   -SSD1306 128x64 OLED display
   
 *********************************************************************/
@@ -107,24 +108,6 @@ void setup(void)
 void loop(void)  
 {
   testdrawchar();
-  
-  /* Following is an example of how to write 24 to display to         */
-  /* display an up arrow followed by down arrow.typical of special    */
-  /* other special characters. Left in simply for reference :--)      */
-  /*
-  display.clearDisplay();   // clears the screen and buffer
-  display.setTextSize(1);
-  display.setTextColor(WHITE);
-  display.setCursor(0,0);
-  display.print("Up arrow: ");
-  display.write(24);       // this prints an up arrow !!!!
-  display.println();
-  display.print("Down arrow: ");
-  display.write(25);       // this prints an down arrow !!!!
-  display.println();
-  display.display();
-  //testdrawchar();
-  */
   
 }
 
