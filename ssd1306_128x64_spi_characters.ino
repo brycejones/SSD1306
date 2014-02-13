@@ -57,19 +57,80 @@ int led=13;
 /************************************************************************/
 
 void testdrawchar(void) {
+  
+
   display.clearDisplay();   // clears the screen and buffer
-  display.setTextSize(1);
+  display.setTextSize(2);
   display.setTextColor(WHITE);
   display.setCursor(0,0);
+  display.println("First set");
+  display.println("0-->91");
+  display.display();
+  delay(3000);
+  display.clearDisplay();   // clears the screen and buffer
+  display.setTextSize(1);
+  display.setCursor(0,0);
 
-  for (uint8_t i=0; i < 168; i++) {
+  // Print the first screen of characters...........
+  for (uint8_t i=0; i < 91; i++) {
     if (i == '\n') continue;
     display.write(i);
     if ((i > 0) && (i % 21 == 0))
       display.println();
   }    
   display.display();
-  delay(10000);
+  delay(5000);
+  
+  
+  display.clearDisplay();   // clears the screen and buffer
+  display.setTextSize(2);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Second set");
+  display.println("91-->189");
+  display.display();
+  delay(3000);
+  display.clearDisplay();   // clears the screen and buffer
+  display.setTextSize(1);
+  display.setCursor(0,0);
+
+  // Print the first screen of characters...........
+  for (uint8_t i=91; i < 190; i++) {
+    if (i == '\n') continue;
+    display.write(i);
+    if ((i > 0) && (i % 21 == 0))
+      display.println();
+  }    
+  display.display();
+  delay(5000);
+  
+      
+  display.clearDisplay();   // clears the screen and buffer
+  display.setTextSize(2);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Third set");
+  display.println("191-->255");
+  display.display();
+  delay(3000);
+  display.clearDisplay();   // clears the screen and buffer
+  display.setTextSize(1);
+  display.setCursor(0,0);
+
+  // Print the first screen of characters...........
+  for (uint8_t i=191; i < 255; i++) {
+    if (i == '\n') continue;
+    display.write(i);
+    if ((i > 0) && (i % 21 == 0))
+      display.println();
+  }    
+  display.display();
+  delay(5000);
+  
+  
+  
+  
+  
 }
 
 
