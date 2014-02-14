@@ -125,13 +125,11 @@ void testdrawchar(void) {
       display.println();
   }    
   display.display();
-  delay(5000);
-  
-  
-  
-  
-  
+  delay(5000);   
+ 
 }
+
+
 
 
 /**************************************************************************/
@@ -139,7 +137,7 @@ void testdrawchar(void) {
     Arduino setup function (automatically called at startup)
 */
 /**************************************************************************/
-void setup(void)  
+void setup(void)    // run once
 {
   Serial.begin(9600);
  
@@ -166,7 +164,7 @@ void setup(void)
     should go here)
 */
 /**************************************************************************/
-void loop(void)  
+void loop(void)    
 {
   testdrawchar();
   
